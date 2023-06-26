@@ -57,7 +57,7 @@ class Solution
         Collections.sort(al,(a,b)->(a.end-b.end));
         int count=1;
         int prevIdx=0;
-        for(int i=1;i<n;i++){
+        for(int i=0;i<n;i++){
             if(al.get(i).start>al.get(prevIdx).end){
                 count++;
                 prevIdx=i;
