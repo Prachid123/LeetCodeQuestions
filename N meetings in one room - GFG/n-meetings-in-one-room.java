@@ -52,7 +52,7 @@ class Solution
         // add your code here
         ArrayList<pair> al = new ArrayList<>();
         for(int i=0;i<n;i++){
-            al.add(new pair(start[i],end[i],i+1));
+            al.add(new pair(start[i],end[i],i));
         }
         Collections.sort(al,(a,b)->(a.end-b.end));
         int count=1;
